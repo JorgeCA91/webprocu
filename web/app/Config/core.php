@@ -217,7 +217,7 @@
  */
 	Configure::write('Session', array(
 		'defaults' => 'php',
-		'cookie' => 'scolar-web-dosapaco',
+		'cookie' => 'web-procu',
 	));
 
 /**
