@@ -40,6 +40,12 @@ class UsuariosController extends AppController {
 	public function contacto() {
 		$this->Usuario->recursive = 0;
 	}
+	public function pistas() {
+		$this->Usuario->recursive = 0;
+	}
+	public function consulta() {
+		$this->Usuario->recursive = 0;
+	}
 /**
  * view method
  *
