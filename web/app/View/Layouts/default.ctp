@@ -23,39 +23,50 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php //echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+	<div id="wrapper">
+		<div class="shell" >
+			<div class="container">
+				<header id="header">
+					<h1 id="logo"><a href="#">Localización de personas desaparecidas</a></h1>
+					<!-- search -->
+					<div class="search">
+						<form action="" method="post">
+							<input type="text" class="field" title="keywords here ..." />
+							<input type="submit" class="search-btn" value="" />
+							<div class="cl">&nbsp;</div>
+						</form>
+					</div>
+					<!-- end of search -->
+					<div class="cl">&nbsp;</div>
+				</header>
+					<?php echo $this->Session->flash(); ?>
+					
+					<?php echo $this->element('menu');?>
+					<?php echo $this->element('slider');?>
+					
+				<div class="main">
+					<?php echo $this->fetch('content'); ?>
+				</div>
+					
+				<div id="footer">
+				</div>
+			</div>
 		</div>
 	</div>
+	
 	<?php echo $this->element('sql_dump'); ?>
+	<script src="<?php echo Router::url('/'); ?>js/jquery-1.8.0.min.js"></script>
+	<script src="<?php echo Router::url('/'); ?>js/jquery.carouFredSel-5.5.0-packed.js"></script>
 </body>
 </html>

@@ -85,6 +85,32 @@ Inflector::rules('plural', array(
 		'responsable' => 'responsables',
 	)
 ));
+Inflector::rules('singular', array(
+	'rules' => array(
+		'/([rlnd])es$/i' => '\1',
+		'/([taeiouj])s$/i' => '\1',
+	),
+	'irregular' => array(
+		'admines' => 'admin',
+		'roles' => 'role',
+		'models' => 'model',
+		'controllers' => 'controller',
+		'usuarios' => 'usuario',
+	)
+));
+Inflector::rules('plural', array(
+	'rules' => array(
+		'/([taeiouj])$/i' => '\1s',
+		'/([rlnd])$/i' => '\1es',
+	),
+	'irregular' => array(
+		'admin' => 'admins',
+		'role' => 'roles',
+		'model' => 'models',
+		'controller' => 'controllers',
+		'usuario' => 'usuarios',
+	)
+));
 /**
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
  * Uncomment one of the lines below, as you need. Make sure you read the documentation on CakePlugin to use more
