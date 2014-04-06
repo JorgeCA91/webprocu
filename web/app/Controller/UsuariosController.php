@@ -30,6 +30,9 @@ class UsuariosController extends AppController {
 	public function home() {
 		$this->render('/Pages/home');
 	}
+	public function mensaje() {
+		$this->Usuario->recursive = 0;
+	}
 /**
  * view method
  *
