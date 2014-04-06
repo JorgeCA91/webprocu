@@ -142,37 +142,11 @@ $this->set('menu_activo', '1');
 	<a class="blue-btn" href="<?php echo Router::url('/usuarios/pistas/');?>">REPORTALA</a>
 </div>
 
-<section class="cols">
-	<div class="col">
-		<h3>About Us</h3>
-		<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ipsum, cursus ut adipiscing porta, vestibulum quis turpis. Ut ultricies rutrum lorem, in blandit tortor congue pulvinar lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><a class="more" href="#">view more</a></p>
-	</div>
 
-	<div class="col">
-		<h3>We’re Hiring</h3>
-		<img class="left" alt="" src="css/images/col-img.png">
-		<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
-		<div class="cl">&nbsp;</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ipsum, cursus ut adipiscing porta, vestibulum quis turpis adispicing amet sit. <br><a class="more" href="#">view more</a></p>
-	</div>
-
-	<div class="col last">
-		<h3>Our Services</h3>
-		<ul>
-			<li class="first"><a href="#">Lorem ipsum dolor sit amet</a></li>
-			<li class="odd"><a href="#">Sit atmet, consectetur lorem </a></li>
-			<li><a href="#">Consectetur adispicing dolor</a></li>
-			<li class="odd"><a href="#">Lipsuim dolor amet adpispicing</a></li>
-			<li><a href="#">Lipsuim dolor amet adpispicing</a></li>
-		</ul>
-	</div>
-	<div class="cl">&nbsp;</div>
-</section>
 
 <section class="entries">
 	<div class="entry">
-		<h3>Latest Blog Posts</h3>
+		<h3>Estadisticas</h3>
 		<div class="entry-inner">
 			<div class="date">
 				<strong>04</strong>
@@ -192,39 +166,25 @@ $this->set('menu_activo', '1');
 			</div>
 			<div class="cnt">
 				<p><a href="#">Un menor rapatado puede ser sacada del pais en menos de 5 horas.<br></a></p>
-				<p class="meta"><a href="#">by John Doe </a> /  <a href="#">Category Name</a></p>
+				<p class="meta"><a href="#"> </a> /  <a href="#">e</a></p>
 			</div>
 		</div>
 		<div class="entry-inner">
 			<div class="date">
-				<strong>11</strong>
-				<span>2012</span>
-				<em>feb</em>
+				<strong>06</strong>
+				<span>2012¿4</span>
+				<em>Abr</em>
 			</div>
 			<div class="cnt">
-				<p><a href="#">Lorem ipsum dolor sit<br> amet, consectetur dor</a></p>
-				<p class="meta"><a href="#">by John Doe </a> /  <a href="#">Category Name</a></p>
+				<p><a href="#">El 70% de niños robados son por sus propios padres.<br></a></p>
+				<p class="meta"><a href="#"> </a> /  <a href="#"></a></p>
 			</div>
 		</div>
 	</div>
 	<div class="entry">
-		<h3>Latest Project</h3>
-		<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
-		<a href="#"><img alt="" src="css/images/col-img2.png"></a>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ipsum, cursus ut adipiscing porta, vestibulum quis turpis adispicing amet sit.  <br><a class="more" href="#">view more</a></p>
-	</div>
-	<div class="entry last">
-		<h3>Testimonials</h3>
-
-		<div class="testimonials">					
-			<p><strong>“</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ipsum, cursus ut adipiscing porta, vestibulum quis turpis.”</p>
-			<p class="author">John Doe, <strong>Company Name</strong></p>
+		<h3>Hagamos conciencia</h3>
+		<iframe width="550" height="400" src="//www.youtube.com/embed/SKQ6dmptOw4" frameborder="0" allowfullscreen></iframe>
 		</div>
-		
-		<div class="partners">
-			<h3>Our Partners</h3>
-			<img alt="" src="css/images/partners-img.png">
-		</div>
-	</div>
+	
 	<div class="cl">&nbsp;</div>
 </section>

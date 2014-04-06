@@ -8,6 +8,8 @@
 		<li <?php echo $menu_activo=='4'? "class='active'": ""; ?>><a href="<?php echo Router::url('/usuarios/consulta/'); ?>">Consulta</a></li>
 		<li <?php echo $menu_activo=='5'? "class='active'": ""; ?>><a href="<?php echo Router::url('/usuarios/quejas/'); ?>">Quejas y Sugerencias</a></li>
 		<li <?php echo $menu_activo=='6'? "class='active'": ""; ?>><a href="<?php echo Router::url('/usuarios/contacto/'); ?>">Contacto</a></li>
+		<li <?php echo $menu_activo=='6'? "class='active'": ""; ?>><a href="<?php echo Router::url('/Admins/'); ?>">Administrativo</a></li>	
 	</ul>
+	
 	<div class="cl">&nbsp;</div>
 </nav>

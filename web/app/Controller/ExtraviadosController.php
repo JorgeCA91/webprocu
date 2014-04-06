@@ -25,6 +25,7 @@ class ExtraviadosController extends AppController {
 		$this->Extraviado->recursive = 0;
 		$this->set('extraviados', $this->Paginator->paginate());
 	}
+	
 
 /**
  * view method
