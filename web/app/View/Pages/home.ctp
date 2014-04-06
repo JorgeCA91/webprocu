@@ -38,6 +38,8 @@ $this->set('menu_activo', '1');
 				<h4>27/Febrero/2014</h4>
 				<h2>Alma Morales Ruíz</h2>
 				<p>AFué vista por ultima vez en el municiío de Santa Cruz Xoxocotlán, Oax. <a href="#">read more</a></p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
 			</div>
 			<img src="css/images/img1.png" alt="" />
 		</li>
@@ -47,6 +49,8 @@ $this->set('menu_activo', '1');
 				<h4>21/08/2013</h4>
 				<h2>Daniel Gonzáles Aparicio</h2>
 				<p>Fué visto por ultima vez en san Andrés Huayapan, Oaxaca. <a href="#">read more</a></p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
 			</div>
 			<img src="css/images/img2.png" alt="" />
 		</li>
@@ -56,6 +60,8 @@ $this->set('menu_activo', '1');
 				<h4>30/08/2011</h4>
 				<h2>Fatima Cariño Hernández</h2>
 				<p>Fué vista por última vez en Sanlina Cruz, Oaxaca.<a href="#">read more</a></p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
 			</div>
 			<img src="css/images/img3.png" alt="" />
 		</li>
@@ -65,6 +71,8 @@ $this->set('menu_activo', '1');
 				<h4>7/12/2010</h4>
 				<h2>Fermín Díaz Aragón</h2>
 				<p>Fué visto por ultima vez en Miahuatlán de Porfirio Díaz, Oaxaca. <a href="#">read more</a></p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
 			</div>
 			<img src="css/images/img4.png" alt="" />
 		</li>
@@ -74,6 +82,8 @@ $this->set('menu_activo', '1');
 				<h4>21/08/2013</h4>
 				<h2>Daniel Gonzáles Aparicio</h2>
 				<p>Fué visto por ultima vez en san Andrés Huayapan, Oaxaca. <a href="#">read more</a></p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
 			</div>
 			<img src="css/images/img5.png" alt="" />
 		</li>
@@ -83,6 +93,8 @@ $this->set('menu_activo', '1');
 				<h4>10/04/2013</h4>
 				<h2>Andrea Ortiz Robles</h2>
 				<p>Fué vista por última vez en la colonia Reforma, Oaxaca de Juárez, Oax.<a href="#">read more</a></p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
 			</div>
 			<img src="css/images/img6.png" alt="" />
 		</li>
@@ -163,23 +175,23 @@ $this->set('menu_activo', '1');
 		<h3>Latest Blog Posts</h3>
 		<div class="entry-inner">
 			<div class="date">
-				<strong>01</strong>
-				<span>2012</span>
-				<em>feb</em>
+				<strong>04</strong>
+				<span>2014</span>
+				<em>Abr</em>
 			</div>
 			<div class="cnt">
-				<p><a href="#">Lorem ipsum dolor sit<br> amet, consectetur dor</a></p>
-				<p class="meta"><a href="#">by John Doe </a> /  <a href="#">Category Name</a></p>
+				<p><a>Hasta el 2014, en Oaxaca el promedio de desaparecidos es 1.3 por día.</a></p>
+				<p class="meta"><a>Segun datos oficiales de la procuradoria general de justicia del estado.</p>
 			</div>
 		</div>
 		<div class="entry-inner">
 			<div class="date">
-				<strong>28</strong>
-				<span>2012</span>
-				<em>jan</em>
+				<strong>04</strong>
+				<span>2014</span>
+				<em>Abr</em>
 			</div>
 			<div class="cnt">
-				<p><a href="#">Lorem ipsum dolor sit<br> amet, consectetur dor</a></p>
+				<p><a href="#">Un menor rapatado puede ser sacada del pais en menos de 5 horas.<br></a></p>
 				<p class="meta"><a href="#">by John Doe </a> /  <a href="#">Category Name</a></p>
 			</div>
 		</div>
