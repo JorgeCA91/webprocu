@@ -1,114 +1,103 @@
+<?php
+/**
+ * e-escolar.net
+ * Vista:  Users Ver
+ */
+
+
+#sección metaDatos
+$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
+$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+
+$this->Html->css(array('style'), 'stylesheet', array('inline' => false));
+											
+?><?php
+/**
+ *
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
+?>
+<?php echo $this->fetch('content'); ?>
+
 <div class="usuarios view">
-<h2><?php echo __('Usuario'); ?></h2>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Role'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['role']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Nombre'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['nombre']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Apellido Paterno'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['apellido_paterno']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Apellido Materno'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['apellido_materno']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Email'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['email']); ?>
-			&nbsp;
-		</dd>
-	</dl>
+<h2> <?php echo __('Mensaje del Procurador'); ?><br/><br/><br/></h2>
+	
+	<h3><?php echo __('Distinguidos visitantes'); ?></h3>
+	
+		<dt> 
+			
+			<p> <?php echo __('En la procuraduría General de Justicia del Estado de Oaxaca somos personas puestas
+			 a disposición del Ministerio Público, lista de personas no localizadas,noticias de importancia y otros
+			  aspectos relevantes que nos permiten tener contacto permanente con ustedes y hacerles saber de la razón
+			   de ser de la PGJE de Oaxaca.'); ?> </p> 
+
+		</dt>
+
+<br/>
+
+		<dt> 
+			
+			<p> <?php echo __('Sin duda que este canal de comunicación nos permitirá interactuar de manera permanente con
+			 la ciudadanía, el objetivo es dar respuestas eficaces a sus demandas. '); ?> </p>
+			  
+		</dt> 
+			
+			<br/>
+			
+			<dt>
+				
+			<p> <?php echo __(' Seguiremos trabajando con el mismo compromiso hacia la sociedad, respondiendo a sus demandas
+			 en la investigación de los delitos, redoblando esfuerzos, dando certidumbre a las victimas, coordinando acciones
+			  que atiendan no sólo el aspecto jurídico de los delitos sino también la asistencia integral de las personas 
+			  agraviadas, cumpliendo siempre con los principios constitucionales de legalidad, objetividad, eficiencia, 
+			  profesionalismo, honradez y respeto a los derechos humanos. '); ?> </p> 
+
+		</dt>
+
+<br/>
+
+
+
+		<dt>
+				
+			<p> <?php echo __(' Por Oaxaca no daremos un sólo paso atrás en la lucha contra la violencia, no daremos un paso 
+			atrás en acciones contra la delincuencia, e insistiremos permanentemente en la promoción de la denuncia,
+			 el 01 800 00 77 628, queda permanentemente abierto para cualquier tipo de reporte en línea inherente a esta
+			  institución. '); ?> </p> 
+
+		</dt>
+
+<br/>
+
+
+
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Usuario'), array('action' => 'edit', $usuario['Usuario']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Usuario'), array('action' => 'delete', $usuario['Usuario']['id']), null, __('Are you sure you want to delete # %s?', $usuario['Usuario']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Admins'), array('controller' => 'admins', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Admin'), array('controller' => 'admins', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Denunciantes'), array('controller' => 'denunciantes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Denunciante'), array('controller' => 'denunciantes', 'action' => 'add')); ?> </li>
-	</ul>
+
+
+
+<div class=" ">
+	<h3><?php echo __(' '); ?></h3>
 </div>
-<div class="related">
-	<h3><?php echo __('Related Admins'); ?></h3>
-	<?php if (!empty($usuario['Admin'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Pass'); ?></th>
-		<th><?php echo __('Usuario Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($usuario['Admin'] as $admin): ?>
-		<tr>
-			<td><?php echo $admin['id']; ?></td>
-			<td><?php echo $admin['pass']; ?></td>
-			<td><?php echo $admin['usuario_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'admins', 'action' => 'view', $admin['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'admins', 'action' => 'edit', $admin['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'admins', 'action' => 'delete', $admin['id']), null, __('Are you sure you want to delete # %s?', $admin['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
+
+<img src="css/images/procu.JPG" alt="" />
+
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Admin'), array('controller' => 'admins', 'action' => 'add')); ?> </li>
+			<h4 align="center"> <?php echo $this->Html->link(__(' La lucha contra la impunidad es y será nuestra
+			 premisa fundamental.'), array('controller' => 'denunciantes', 'action' => 'add')); ?> </h4>
 		</ul>
 	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Denunciantes'); ?></h3>
-	<?php if (!empty($usuario['Denunciante'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Usuario Id'); ?></th>
-		<th><?php echo __('Domicilio'); ?></th>
-		<th><?php echo __('Tel'); ?></th>
-		<th><?php echo __('Localidad Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($usuario['Denunciante'] as $denunciante): ?>
-		<tr>
-			<td><?php echo $denunciante['id']; ?></td>
-			<td><?php echo $denunciante['usuario_id']; ?></td>
-			<td><?php echo $denunciante['domicilio']; ?></td>
-			<td><?php echo $denunciante['tel']; ?></td>
-			<td><?php echo $denunciante['localidad_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'denunciantes', 'action' => 'view', $denunciante['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'denunciantes', 'action' => 'edit', $denunciante['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'denunciantes', 'action' => 'delete', $denunciante['id']), null, __('Are you sure you want to delete # %s?', $denunciante['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Denunciante'), array('controller' => 'denunciantes', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
