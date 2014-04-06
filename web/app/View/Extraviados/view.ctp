@@ -1,25 +1,3 @@
-<?php
-/**
- * e-escolar.net
- * Vista:  Users Ver
- */
-
-
-#sección metaDatos
-$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
-$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
-$this->Html->css(array('style','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
-$this->Html->script(
-	array(
-		'jquery-1.8.0.min.js',
-		'estilos'
-	),
-	array(
-	'inline' => false
-	)
-);
-$this->set('menu_activo', '3');
-?>
 <div class="extraviados view">
 <h2><?php echo __('Extraviado'); ?></h2>
 	<dl>

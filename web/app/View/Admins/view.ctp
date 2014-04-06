@@ -1,3 +1,26 @@
+<?php
+/**
+ * e-escolar.net
+ * Vista:  Users Ver
+ */
+
+
+#sección metaDatos
+$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
+$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+$this->Html->css(array('style','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
+$this->Html->script(
+	array(
+		'jquery-1.8.0.min.js',
+		'estilos',
+		'estilosAdmin'
+	),
+	array(
+	'inline' => false
+	)
+);
+$this->set('menu_activo', '4');
+?>
 <div class="admins view">
 <h2><?php echo __('Admin'); ?></h2>
 	<dl>

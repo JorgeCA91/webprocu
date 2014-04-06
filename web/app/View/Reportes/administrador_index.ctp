@@ -1,3 +1,26 @@
+<?php
+/**
+ * e-escolar.net
+ * Vista:  Users Ver
+ */
+
+
+#sección metaDatos
+$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
+$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+$this->Html->css(array('style','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
+$this->Html->script(
+	array(
+		'jquery-1.8.0.min.js',
+		'estilos',
+		'estilosAdmin'
+	),
+	array(
+	'inline' => false
+	)
+);
+$this->set('menu_activo', '4');
+?>
 <div class="reportes index">
 	<h2><?php echo __('Reportes'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -35,9 +58,9 @@
 			<?php echo $this->Html->link($reporte['Extraviado']['id'], array('controller' => 'extraviados', 'action' => 'view', $reporte['Extraviado']['id'])); ?>
 		</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $reporte['Reporte']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $reporte['Reporte']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $reporte['Reporte']['id']), null, __('Are you sure you want to delete # %s?', $reporte['Reporte']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $reporte['Reporte']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $reporte['Reporte']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $reporte['Reporte']['id']), null, __('Are you sure you want to delete # %s?', $reporte['Reporte']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
