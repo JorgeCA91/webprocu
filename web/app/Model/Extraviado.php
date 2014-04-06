@@ -32,6 +32,13 @@ class Extraviado extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
+		'Usuario' => array(
+			'className' => 'Usuario',
+			'foreignKey' => 'usuario_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'Localidad' => array(
 			'className' => 'Localidad',
 			'foreignKey' => 'localidad_id',
