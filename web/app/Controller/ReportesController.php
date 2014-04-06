@@ -49,8 +49,9 @@ class ReportesController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Reporte->create();
+			die(pr($this->request->data));
+			
 			if ($this->Reporte->save($this->request->data)) {
-				die(pr($this->request->data));
 				$this->Session->setFlash(__('The reporte has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
