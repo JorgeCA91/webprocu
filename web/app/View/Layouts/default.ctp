@@ -53,7 +53,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					<?php echo $this->Session->flash(); ?>
 					
 					<?php echo $this->element('menu');?>
-					<?php echo $this->element('slider');?>
 					
 				<div class="main">
 					<?php echo $this->fetch('content'); ?>
@@ -67,6 +66,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	
 	<?php echo $this->element('sql_dump'); ?>
 	<script src="<?php echo Router::url('/'); ?>js/jquery-1.8.0.min.js"></script>
+	<script src="<?php echo Router::url('/'); ?>js/functions.js"></script>
 	<script src="<?php echo Router::url('/'); ?>js/jquery.carouFredSel-5.5.0-packed.js"></script>
 </body>
 </html>

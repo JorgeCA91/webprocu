@@ -48,7 +48,7 @@ textarea { overflow: auto; }
 
 .slider-holder { position: relative; margin-bottom:30px;   }
 
-.slider { background: url(images/slider-bg.jpg) no-repeat 0 0; width: 938px; height: 417px; position:relative; overflow: hidden; padding:0 21px; }
+.slider { background: url(images/slider-bg.png) no-repeat 0 0; width: 938px; height: 417px; position:relative; overflow: hidden; padding:0 21px; }
 .slider ul { list-style:none; list-style-position: outside; }
 .slider ul li { float: left; width: 938px; height: 417px; }
 .slider .slide-cnt { width: 450px; height: 220px; position:relative; overflow: hidden; float: right; padding-top: 30px;  }
