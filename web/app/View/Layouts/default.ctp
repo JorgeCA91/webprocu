@@ -50,10 +50,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					<!-- end of search -->
 					<div class="cl">&nbsp;</div>
 				</header>
+				
+					<?php echo $this->element('menu'); ?>
 					<?php echo $this->Session->flash(); ?>
-					
-					<?php echo $this->element('menu');?>
-					
 				<div class="main">
 					<?php echo $this->fetch('content'); ?>
 				</div>

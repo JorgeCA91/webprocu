@@ -14,10 +14,8 @@ $this->Html->css(array(
 						), 'stylesheet', array('inline' => false));
 
 
-$this->Html->script(array(
-											'functions.js',
-											), array('inline' => false));
-											
+$this->Html->script(array('functions','jquery-1.8.0.min.js'), array('inline' => false));
+$this->set('menu_activo', '1');											
 ?>
 <div class="slider-holder">
 	<div class="slider">

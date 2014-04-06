@@ -22,4 +22,6 @@
 		<li><?php echo $this->Html->link(__('List Denunciantes'), array('controller' => 'denunciantes', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Denunciante'), array('controller' => 'denunciantes', 'action' => 'add')); ?> </li>
 	</ul>
+	<br>
+	<a href="<?php echo Router::url('/'); ?>">Inicio</a>
 </div>

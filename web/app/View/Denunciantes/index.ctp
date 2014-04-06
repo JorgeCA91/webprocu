@@ -1,3 +1,17 @@
+<?php
+/**
+ * e-escolar.net
+ * Vista:  Users Ver
+ */
+
+
+#sección metaDatos
+$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
+$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+
+$this->Html->css(array('style'), 'stylesheet', array('inline' => false));
+											
+?>
 <div class="denunciantes index">
 	<h2><?php echo __('Denunciantes'); ?></h2>
 	<table cellpadding="0" cellspacing="0">

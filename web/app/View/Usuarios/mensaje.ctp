@@ -1,9 +1,4 @@
 <?php
-/**
- * e-escolar.net
- * Vista:  Users Ver
- */
-
 
 #sección metaDatos
 $this->set('title_for_layout', 'PROCU - Usuarios Inicio');
@@ -100,4 +95,3 @@ $this->Html->css(array('style'), 'stylesheet', array('inline' => false));
 			 premisa fundamental.'), array('controller' => 'denunciantes', 'action' => 'add')); ?> </h4>
 		</ul>
 	</div>
-
