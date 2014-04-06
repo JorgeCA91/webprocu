@@ -33,6 +33,13 @@ class UsuariosController extends AppController {
 	public function mensaje() {
 		$this->Usuario->recursive = 0;
 	}
+	
+	public function quejas() {
+		$this->Usuario->recursive = 0;
+	}
+	public function contacto() {
+		$this->Usuario->recursive = 0;
+	}
 /**
  * view method
  *
