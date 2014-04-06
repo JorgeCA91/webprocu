@@ -8,7 +8,11 @@
 #sección metaDatos
 $this->set('title_for_layout', 'PROCU - Usuarios Inicio');
 $this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+<<<<<<< HEAD
 $this->Html->css(array('style','styletable','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
+=======
+$this->Html->css(array('style','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
+>>>>>>> 21c8ae9e3317ce40cd538c82e7da9af53585df5a
 $this->Html->script(
 	array(
 		'jquery-1.8.0.min.js',

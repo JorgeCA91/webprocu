@@ -37,10 +37,10 @@ $this->set('menu_activo', '1');
 			<div class="slide-cnt">
 				<h4>27/Febrero/2014</h4>
 				<h2>Alma Morales Ruíz</h2>
-				<p>AFué vista por ultima vez en el municiío de Santa Cruz Xoxocotlán, Oax. <a href="#">read more</a></p>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
-			</div>
+				<p>AFué vista por ultima vez en el municiío de Santa Cruz Xoxocotlán, Oax.</p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/comparte-fb.png" border="0" width="80" height="26" alt="Compartir" /></a>
+			    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/comparte-tw.png" border="0" width="80" height="26" alt="Compartir" /></a>
+				</div>
 			<img src="css/images/img1.png" alt="" />
 		</li>
 
@@ -48,10 +48,10 @@ $this->set('menu_activo', '1');
 			<div class="slide-cnt">
 				<h4>21/08/2013</h4>
 				<h2>Daniel Gonzáles Aparicio</h2>
-				<p>Fué visto por ultima vez en san Andrés Huayapan, Oaxaca. <a href="#">read more</a></p>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
-			</div>
+				<p>Fué visto por ultima vez en san Andrés Huayapan, Oaxaca.</p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/comparte-fb.png" border="0" width="80" height="26" alt="Compartir" /></a>
+							    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/comparte-tw.png" border="0" width="80" height="26" alt="Compartir" /></a>
+				</div>
 			<img src="css/images/img2.png" alt="" />
 		</li>
 
@@ -59,10 +59,10 @@ $this->set('menu_activo', '1');
 			<div class="slide-cnt">
 				<h4>30/08/2011</h4>
 				<h2>Fatima Cariño Hernández</h2>
-				<p>Fué vista por última vez en Sanlina Cruz, Oaxaca.<a href="#">read more</a></p>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
-			</div>
+				<p>Fué vista por última vez en Sanlina Cruz, Oaxaca.</p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/comparte-fb.png" border="0" width="80" height="26" alt="Compartir" /></a>
+			    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/comparte-tw.png" border="0" width="80" height="26" alt="Compartir" /></a>
+				</div>
 			<img src="css/images/img3.png" alt="" />
 		</li>
 
@@ -70,10 +70,10 @@ $this->set('menu_activo', '1');
 			<div class="slide-cnt">
 				<h4>7/12/2010</h4>
 				<h2>Fermín Díaz Aragón</h2>
-				<p>Fué visto por ultima vez en Miahuatlán de Porfirio Díaz, Oaxaca. <a href="#">read more</a></p>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
-			</div>
+				<p>Fué visto por ultima vez en Miahuatlán de Porfirio Díaz, Oaxaca.</p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/comparte-fb.png" border="0" width="80" height="26" alt="Compartir" /></a>
+							    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/comparte-tw.png" border="0" width="80" height="26" alt="Compartir" /></a>
+				</div>
 			<img src="css/images/img4.png" alt="" />
 		</li>
 
@@ -81,10 +81,10 @@ $this->set('menu_activo', '1');
 			<div class="slide-cnt">
 				<h4>21/08/2013</h4>
 				<h2>Daniel Gonzáles Aparicio</h2>
-				<p>Fué visto por ultima vez en san Andrés Huayapan, Oaxaca. <a href="#">read more</a></p>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
-			</div>
+				<p>Fué visto por ultima vez en san Andrés Huayapan, Oaxaca.</p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/comparte-fb.png" border="0" width="80" height="26" alt="Compartir" /></a>
+							    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/comparte-tw.png" border="0" width="80" height="26" alt="Compartir" /></a>
+				</div>
 			<img src="css/images/img5.png" alt="" />
 		</li>
 
@@ -92,10 +92,10 @@ $this->set('menu_activo', '1');
 			<div class="slide-cnt">
 				<h4>10/04/2013</h4>
 				<h2>Andrea Ortiz Robles</h2>
-				<p>Fué vista por última vez en la colonia Reforma, Oaxaca de Juárez, Oax.<a href="#">read more</a></p>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>
-				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/compartir.png" border="0" width="128" height="40" alt="Compartir" /></a>Compartir en Twitter</a>
-			</div>
+				<p>Fué vista por última vez en la colonia Reforma, Oaxaca de Juárez, Oax.</p>
+				<a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');"><img src="css/images/comparte-fb.png" border="0" width="80" height="26" alt="Compartir" /></a>
+							    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><img src="css/images/comparte-tw.png" border="0" width="80" height="26" alt="Compartir" /></a>
+				</div>
 			<img src="css/images/img6.png" alt="" />
 		</li>
 
