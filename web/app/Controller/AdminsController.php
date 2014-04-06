@@ -59,6 +59,10 @@ class AdminsController extends AppController {
 		$usuarios = $this->Admin->Usuario->find('list');
 		$this->set(compact('usuarios'));
 	}
+	
+	public function administrador_login() {
+			return $this->redirect(array('action' => 'index'));
+	}
 
 /**
  * edit method

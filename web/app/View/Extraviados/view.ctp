@@ -1,3 +1,25 @@
+<?php
+/**
+ * e-escolar.net
+ * Vista:  Users Ver
+ */
+
+
+#sección metaDatos
+$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
+$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+$this->Html->css(array('style','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
+$this->Html->script(
+	array(
+		'jquery-1.8.0.min.js',
+		'estilos'
+	),
+	array(
+	'inline' => false
+	)
+);
+$this->set('menu_activo', '3');
+?>
 <div class="extraviados view">
 <h2><?php echo __('Extraviado'); ?></h2>
 	<dl>
@@ -58,98 +80,5 @@
 		</dd>
 	</dl>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Extraviado'), array('action' => 'edit', $extraviado['Extraviado']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Extraviado'), array('action' => 'delete', $extraviado['Extraviado']['id']), null, __('Are you sure you want to delete # %s?', $extraviado['Extraviado']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Extraviados'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Extraviado'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Localidades'), array('controller' => 'localidades', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Localidad'), array('controller' => 'localidades', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Identificaciones'), array('controller' => 'identificaciones', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Identificacion'), array('controller' => 'identificaciones', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Reportes'), array('controller' => 'reportes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Reporte'), array('controller' => 'reportes', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Identificaciones'); ?></h3>
-	<?php if (!empty($extraviado['Identificacion'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Tipo'); ?></th>
-		<th><?php echo __('Denunciante Id'); ?></th>
-		<th><?php echo __('Extraviado Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($extraviado['Identificacion'] as $identificacion): ?>
-		<tr>
-			<td><?php echo $identificacion['id']; ?></td>
-			<td><?php echo $identificacion['tipo']; ?></td>
-			<td><?php echo $identificacion['denunciante_id']; ?></td>
-			<td><?php echo $identificacion['extraviado_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'identificaciones', 'action' => 'view', $identificacion['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'identificaciones', 'action' => 'edit', $identificacion['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'identificaciones', 'action' => 'delete', $identificacion['id']), null, __('Are you sure you want to delete # %s?', $identificacion['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Identificacion'), array('controller' => 'identificaciones', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Reportes'); ?></h3>
-	<?php if (!empty($extraviado['Reporte'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Status'); ?></th>
-		<th><?php echo __('Tgenero'); ?></th>
-		<th><?php echo __('MayMen'); ?></th>
-		<th><?php echo __('Grupo'); ?></th>
-		<th><?php echo __('FechaReporte'); ?></th>
-		<th><?php echo __('FechaConclusion'); ?></th>
-		<th><?php echo __('Motivo'); ?></th>
-		<th><?php echo __('Admin Id'); ?></th>
-		<th><?php echo __('Denunciante Id'); ?></th>
-		<th><?php echo __('Extraviado Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($extraviado['Reporte'] as $reporte): ?>
-		<tr>
-			<td><?php echo $reporte['id']; ?></td>
-			<td><?php echo $reporte['status']; ?></td>
-			<td><?php echo $reporte['tgenero']; ?></td>
-			<td><?php echo $reporte['mayMen']; ?></td>
-			<td><?php echo $reporte['grupo']; ?></td>
-			<td><?php echo $reporte['fechaReporte']; ?></td>
-			<td><?php echo $reporte['fechaConclusion']; ?></td>
-			<td><?php echo $reporte['motivo']; ?></td>
-			<td><?php echo $reporte['admin_id']; ?></td>
-			<td><?php echo $reporte['denunciante_id']; ?></td>
-			<td><?php echo $reporte['extraviado_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'reportes', 'action' => 'view', $reporte['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'reportes', 'action' => 'edit', $reporte['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'reportes', 'action' => 'delete', $reporte['id']), null, __('Are you sure you want to delete # %s?', $reporte['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Reporte'), array('controller' => 'reportes', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>

@@ -18,15 +18,18 @@ $this->Html->script(
 	'inline' => false
 	)
 );
+$this->set('menu_activo', '6');
 ?>
-<div id="conta">	
-	Calle de Arista # 313
-	Entre las calles de J. P. García y 20 de Noviembre, Colonia Centro,<br> Oaxaca de Juárez, Oax.
-    <br>           	
-    Teléfono: (951) 5143695<br><br>
-	<iframe src="https://mapsengine.google.com/map/embed?mid=zVEnAg1baG6w.kvUrlrh5FH6o" width="404" height="400"></iframe>
-	</p>
-						<a href="<?php echo Router::url('/'); ?>">Inicio</a>
-							
+<div id="cols">
+	<div id="conta">	
+		Calle de Arista # 313
+		Entre las calles de J. P. García y 20 de Noviembre, Colonia Centro,<br> Oaxaca de Juárez, Oax.
+		<br>           	
+		Teléfono: (951) 5143695<br><br>
+		<iframe src="https://mapsengine.google.com/map/embed?mid=zVEnAg1baG6w.kvUrlrh5FH6o" width="404" height="400"></iframe>
+		</p>
+							<a href="<?php echo Router::url('/'); ?>">Inicio</a>
+								
+	</div>
 </div>
 

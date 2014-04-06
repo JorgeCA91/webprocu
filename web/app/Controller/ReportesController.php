@@ -78,7 +78,7 @@ class ReportesController extends AppController {
 				}
 				
 				$this->Session->setFlash(__('The reporte has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('controller' =>'extraviados','action' => 'view',1));
 			} else {
 				$this->Session->setFlash(__('The reporte could not be saved. Please, try again.'));
 			}

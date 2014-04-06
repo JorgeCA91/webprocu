@@ -58,6 +58,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				</div>
 					
 				<div id="footer">
+					<ul>
+						<h4 align="center"> <?php echo $this->Html->link(__(' La lucha contra la impunidad es y será nuestra
+						 premisa fundamental.'), array('controller' => 'denunciantes', 'action' => 'add')); ?> </h4>
+					</ul>
 				</div>
 			</div>
 		</div>
