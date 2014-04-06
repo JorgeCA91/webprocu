@@ -51,33 +51,37 @@ class ReportesController extends AppController {
 		
 		if ($this->request->is('post')) {
 			$this->Reporte->create();
-			
-			if ($this->Reporte->save($this->request->data['Reporte'])) {
-				if ($this->Reporte->Extraviado->save($this->request->data['Extraviado'])) {
-					$userExtra = array(
+			$this->Reporte->Extraviado->Usuario->create();
+			$this->Reporte->Extraviado->create();
+			$userExtra = array(
 						'nombre' => $this->request->data['Extraviado']['nombre'],
 						'apellido_paterno' => $this->request->data['Extraviado']['apellido_paterno'],
 						'apellido_materno' => $this->request->data['Extraviado']['apellido_materno']
 					);
-					if ($this->Reporte->Extraviado->Usuario->save($userExtra)) {
-						$this->Session->setFlash(__('The extraviado has been saved.'));
-					}
-					
-				}
-				if ($this->Reporte->Denunciante->save($this->request->data['Denunciante']) ) {
-					if ($this->Reporte->Denunciante->Parentesco->save($this->request->data['Parentesco'])) {
-						$userDenun = array(
+			if ($this->Reporte->Extraviado->Usuario->save($userExtra)) {
+				$this->request->data['Extraviado']['usuario_id'] = $this->Reporte->Extraviado->Usuario->id;
+				if ($this->Reporte->Extraviado->save($this->request->data['Extraviado'])) {
+					$this->Session->setFlash(__('The Denunciante has been saved.'));
+				}		
+			}
+			
+			$this->Reporte->Denunciante->Usuario->create();
+			$this->Reporte->Denunciante->create();
+			$userDenun = array(
 							'nombre' => $this->request->data['Denunciante']['nombre'],
 							'apellido_paterno' => $this->request->data['Denunciante']['apellido_paterno'],
 							'apellido_materno' => $this->request->data['Denunciante']['apellido_materno']
 						);
-						if($this->Reporte->Denunciante->Usuario->save($userDenun)) {
+			if($this->Reporte->Denunciante->Usuario->save($userDenun)) {
+				$this->request->data['Denunciante']['usuario_id'] = $this->Reporte->Denunciante->Usuario->id;
+				if ($this->Reporte->Denunciante->save($this->request->data['Denunciante']) ) {
+					if ($this->Reporte->Denunciante->Parentesco->save($this->request->data['Parentesco'])) {
 							$this->Session->setFlash(__('The Denunciante has been saved.'));
-						}
 					}
 				}
+			}
 				
-				$this->Session->setFlash(__('The reporte has been saved.'));
+			if ($this->Reporte->save($this->request->data['Reporte'])) {
 				return $this->redirect(array('controller' =>'extraviados','action' => 'view',1));
 			} else {
 				$this->Session->setFlash(__('The reporte could not be saved. Please, try again.'));

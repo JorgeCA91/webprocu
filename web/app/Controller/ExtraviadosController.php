@@ -44,6 +44,29 @@ class ExtraviadosController extends AppController {
 		$this->set('extraviados', $extraviados);
 	}
 	
+	public function consultaadmin() {
+		$conditions = array();
+		$consulta = array();
+		$this->Extraviado->recursive = 3;
+		if ($this->request->is('post')) {
+			$consulta = $this->request->data['Consulta'];
+			if(isset( $consulta )) {
+				$nombre = $consulta['nombre'];
+				$app = $consulta['apellido_paterno'];
+				$apm = $consulta['apellido_materno'];
+					$conditions['AND'] = array(
+									"Usuario.nombre LIKE" => "%{$nombre}%",
+									"Usuario.apellido_paterno LIKE" => "%{$app}%",
+									"Usuario.apellido_materno LIKE" => "%{$apm}%",
+						);
+					
+				}
+        }
+        $options = array('conditions' => $conditions,'ignore-case' => true);
+        $extraviados = $this->Extraviado->Usuario->find('all', $options);
+		$this->set('extraviados', $extraviados);
+	}
+	
 
 /**
  * view method
@@ -133,7 +156,8 @@ class ExtraviadosController extends AppController {
  */
 	public function administrador_index() {
 		$this->Extraviado->recursive = 0;
-		$this->set('extraviados', $this->Paginator->paginate());
+		$extraviados = $this->Extraviado->find('all');
+		$this->set('extraviados', $extraviados);
 	}
 
 /**

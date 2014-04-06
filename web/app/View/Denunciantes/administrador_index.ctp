@@ -1,6 +1,42 @@
+<?php
+/**
+ * e-escolar.net
+ * Vista:  Users Ver
+ */
+
+
+#sección metaDatos
+$this->set('title_for_layout', 'PROCU - Usuarios Inicio');
+$this->Html->meta('description', 'Usuarios Inicio', array('inline' => false));
+$this->Html->css(array('style','styletable','form','style1','jquery.ui.timepicker.css'), 'stylesheet', array('inline' => false));
+$this->Html->script(
+	array(
+		'jquery-1.8.0.min.js',
+		'estilos',
+		'estilosAdmin'
+	),
+	array(
+	'inline' => false
+	)
+);
+?>
+<nav id="navigation">
+	<a href="#" class="nav-btn">Inicio<span></span></a>
+	<?php $menu_activo = '4';?>
+	<ul>
+		<li <?php echo $menu_activo=='1'? "class='active'": ""; ?> ><a href="<?php echo Router::url('/Admins/'); ?>">Inicio</a></li>
+		<li <?php echo $menu_activo=='2'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/extraviados/'); ?>">Extraviados</a></li>
+		<li <?php echo $menu_activo=='3'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/reportes/'); ?>">Reportes</a></li>
+		<li <?php echo $menu_activo=='4'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/denunciantes/'); ?>">Denunciantes</a></li>
+		<li <?php echo $menu_activo=='5'? "class='active'": ""; ?>><a href="<?php echo Router::url('/admins/consulta/'); ?>">Consultas</a></li>
+	</ul>
+	<div class="cl">&nbsp;</div>
+</nav>
 <div class="denunciantes index">
 	<h2><?php echo __('Denunciantes'); ?></h2>
+	<div class='datagrid'>
 	<table cellpadding="0" cellspacing="0">
+		<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
@@ -9,6 +45,8 @@
 			<th><?php echo $this->Paginator->sort('localidad_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
+	</thead>
+	<tbody>
 	<?php foreach ($denunciantes as $denunciante): ?>
 	<tr>
 		<td><?php echo h($denunciante['Denunciante']['id']); ?>&nbsp;</td>
@@ -27,7 +65,9 @@
 		</td>
 	</tr>
 <?php endforeach; ?>
+</tbody>
 	</table>
+	</div>
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
@@ -41,20 +81,4 @@
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Denunciante'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Localidades'), array('controller' => 'localidades', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Localidad'), array('controller' => 'localidades', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Identificaciones'), array('controller' => 'identificaciones', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Identificacion'), array('controller' => 'identificaciones', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Parentescos'), array('controller' => 'parentescos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Parentesco'), array('controller' => 'parentescos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Reportes'), array('controller' => 'reportes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Reporte'), array('controller' => 'reportes', 'action' => 'add')); ?> </li>
-	</ul>
 </div>

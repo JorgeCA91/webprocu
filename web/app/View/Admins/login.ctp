@@ -22,40 +22,36 @@ $this->Html->script(
 ?>
 <nav id="navigation">
 	<a href="#" class="nav-btn">Inicio<span></span></a>
-	<?php $menu_activo = '2';?>
+	<?php $menu_activo = '1';?>
 	<ul>
 		<li <?php echo $menu_activo=='1'? "class='active'": ""; ?> ><a href="<?php echo Router::url('/Admins/'); ?>">Inicio</a></li>
 		<li <?php echo $menu_activo=='2'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/extraviados/'); ?>">Extraviados</a></li>
 		<li <?php echo $menu_activo=='3'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/reportes/'); ?>">Reportes</a></li>
 		<li <?php echo $menu_activo=='4'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/denunciantes/'); ?>">Denunciantes</a></li>
-		<li <?php echo $menu_activo=='5'? "class='active'": ""; ?>><a href="<?php echo Router::url('/admins/consulta/'); ?>">Consultas</a></li>
+		<li <?php echo $menu_activo=='5'? "class='active'": ""; ?>><a href="<?php echo Router::url('/admis/consulta'); ?>">Consultas</a></li>
 	</ul>
 	<div class="cl">&nbsp;</div>
 </nav>
-<div class="extraviados index">
-	<h2><?php echo __('Extraviados'); ?></h2>
-	<div class='datagrid'>
-	<table cellpadding="0" cellspacing="0">
-	<thead>
-	<tr>
-			
-			<th>Nombre</th>
-			<th>Apelidos</th>
-			<th>Edad</th>
-			<th>Domicilio</th>
-	</tr>
-	</thead>
-	<tbody>
-	<?php foreach ($extraviados as $extraviado): ?>
-	<tr>
-		<td><?php echo h($extraviado['Usuario']['nombre']); ?>&nbsp;</td>
-		<td><?php echo h($extraviado['Usuario']['apellido_paterno']) .' '.h($extraviado['Usuario']['apellido_materno']); ?>&nbsp;</td>
-		<td><?php echo h($extraviado['Extraviado']['edad']); ?>&nbsp;</td>
-		<td><?php echo h($extraviado['Extraviado']['domicilio']); ?>&nbsp;</td>
-	</tr>
-<?php endforeach; ?>
-</tbody>
-	</table>
-	</div>
-	
+<div class='cols'>
+<form>
+  <h1>Entrar</h1>
+  <div class="inset">
+  <p>
+    <label for="email">USUARIO</label>
+    <input type="text" name="email" id="email">
+  </p>
+  <p>
+    <label for="password">CONTRASEÑA</label>
+    <input type="password" name="password" id="password">
+  </p>
+  <p>
+    <input type="checkbox" name="remember" id="remember">
+    <label for="remember">Recordar datos</label>
+  </p>
+  </div>
+  <p class="p-container">
+    
+    <input type="submit" name="go" id="go" value="Log in">
+  </p>
+</form>
 </div>

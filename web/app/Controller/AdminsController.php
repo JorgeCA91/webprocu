@@ -22,8 +22,7 @@ class AdminsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Admin->recursive = 0;
-		$this->set('admins', $this->Paginator->paginate());
+		return $this->redirect(array('action' => 'login'));
 	}
 
 /**
@@ -60,8 +59,8 @@ class AdminsController extends AppController {
 		$this->set(compact('usuarios'));
 	}
 	
-	public function administrador_login() {
-			return $this->redirect(array('action' => 'index'));
+	public function login() {
+			
 	}
 
 /**
@@ -135,7 +134,11 @@ class AdminsController extends AppController {
 		$options = array('conditions' => array('Admin.' . $this->Admin->primaryKey => $id));
 		$this->set('admin', $this->Admin->find('first', $options));
 	}
-
+	
+	public function consulta() {
+		$this->Usuario->recursive = 0;
+	}
+	
 /**
  * administrador_add method
  *

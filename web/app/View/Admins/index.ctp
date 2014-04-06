@@ -19,17 +19,16 @@ $this->Html->script(
 	'inline' => false
 	)
 );
-$this->set('menu_activo', '4');
 ?>
 <nav id="navigation">
 	<a href="#" class="nav-btn">Inicio<span></span></a>
-	<?php $menu_activo;?>
+	<?php $menu_activo = '1';?>
 	<ul>
 		<li <?php echo $menu_activo=='1'? "class='active'": ""; ?> ><a href="<?php echo Router::url('/Admins/'); ?>">Inicio</a></li>
 		<li <?php echo $menu_activo=='2'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/extraviados/'); ?>">Extraviados</a></li>
 		<li <?php echo $menu_activo=='3'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/reportes/'); ?>">Reportes</a></li>
-		<li><a href="<?php echo Router::url('/administrador/denunciantes/'); ?>">Denunciantes</a></li>
-		<li><a href="<?php echo Router::url('/administrador/consultas/'); ?>">Consultas</a></li>
+		<li <?php echo $menu_activo=='4'? "class='active'": ""; ?>><a href="<?php echo Router::url('/administrador/denunciantes/'); ?>">Denunciantes</a></li>
+		<li <?php echo $menu_activo=='5'? "class='active'": ""; ?>><a href="<?php echo Router::url('/admins/consulta/'); ?>">Consultas</a></li>
 	</ul>
 	<div class="cl">&nbsp;</div>
 </nav>
